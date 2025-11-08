@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <h1>Expense tracker</h1>
+        <div id="input-box">
+            <div class="box" >
+                <label class="box1" for="category">Category:</label>
+                <select class="box2" name="category" id="category" placeholder="Select Category">
+                    <!-- <option class="box2" value=""></option> -->
+                    <option class="box2" valu   e="travel">Travel</option>
+                    <option value="rent" class="box2" >Rent</option>
+                    <option value="food" class="box2" >Food</option>
+                    <option value="academic" class="box2" >Academic</option>
+                    <option value="other" class="box2" >Other</option>
+                </select>
+            </div>
+
+            <div class="box">
+                <label for="amount" class="box1" >Amount:</label>
+                <input type="number" class="box2"  name="amount" id="amount">
+            </div>
+
+            <div class="box">
+                <label for="date" class="box1" >Date:</label>
+                <input type="date" name="date" id="date" class="box2" >
+            </div>
+
+            <div class="box">
+                <button id="add" class="box3" >ADD</button>
+            </div>
+        </div>
+
+        <div id="table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Amount</th>
+                        <th>Date</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+
+                <tbody id="expense-table-body">
+
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td>Total</td>
+                        <td id="total-amount">  </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
